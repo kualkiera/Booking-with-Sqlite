@@ -1,0 +1,143 @@
+#parking-page {
+    background-color: rgb(245, 246, 248);
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    color: rgb(42, 42, 42);
+}
+
+#parking-page .parking-main {
+    background: white;
+    border: 1px solid rgb(217, 221, 227);
+    border-radius: 5px;
+}
+.parking-header .description {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.description a {
+    color: rgb(42, 42, 42);
+}
+
+.parking-content {
+	position:relative;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+}
+
+.table-wrap {
+	width:100%;
+	overflow:auto;
+}
+
+.parking-content table {
+    width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0;
+}
+
+.clone {
+	position:absolute;
+	top:0;
+	left:0;
+	pointer-events:none;
+}
+.clone th, .clone td {
+	visibility:hidden
+}
+.clone td, .clone th {
+	border-color:transparent
+}
+.clone tbody th {
+	visibility:visible;
+	color:red;
+}
+.clone .fixed-side {
+	border:1px solid #000;
+	background:#eee;
+    visibility:visible;
+    text-align: center;
+}
+.clone thead, .clone tfoot{background:transparent;}
+
+.parking-content .park-check {
+    border-bottom: 1px solid #D9DDE3;
+    box-sizing: border-box;
+    box-shadow: 0 3px 0 rgba(217,221,227,0.3);
+}
+.parking-content .park-check:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    pointer-events: none;
+    background-color: rgba(255,255,255,0);
+    background-image: -webkit-linear-gradient(-360deg, rgba(255,255,255,0),#ffffff);
+    background-image: linear-gradient(90deg,rgba(255,255,255,0),#ffffff);
+}
+.parking-content .park-check .btn-park {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(255, 0, 126);
+    border: 1px solid rgb(236, 238, 241);
+    border-radius: 5px;
+    padding: 20px 8px 20px 8px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.parking-content .park-check .btn-park:hover {
+    color: white;
+    background-color: rgb(255, 0, 126);
+}
+
+.parking-content .park-check .btn-park:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.parking-content .park-users {
+    padding-left: 20px;
+}
+
+.avatar-img {
+    padding: 5px;
+    width: 25px;
+    border-radius: 2px;
+}
+.bg-img-1 {
+    background: #8A75AE;
+}
+
+.bg-img-2 {
+    background: #80A1DA;
+}
+
+.bg-img-3 {
+    background: #B3DD8B;
+}
+
+.bg-img-4 {
+    background: #7EE4E4;
+}
+
+#parking-page .parking-main .table>tbody>tr>td{
+    /* padding: 24px 0; */
+    vertical-align: middle;
+    border-color: #ddd;
+    font-weight: 300;
+    font-size:18px;
+    color: #3c4858;
+}
+
+#parking-page .parking-content .main-table .park-check .park-tr td{
+    text-align: center;
+}
+
+.hover {
+    display: block;
+}
